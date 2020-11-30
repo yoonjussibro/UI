@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>topnav</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            /* 너비와 높이의 기준을 border 영역까지 포함 */
+            box-sizing: border-box;
+            /* 페이지 전체의 폰트를 적용 */
+            font-family: 'Black Han Sans', sans-serif;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        nav ul {
+            /* ul의 기본 구분자를 화면에서 삭제 */
+            list-style-type: none;
+            /* 외부 공간을 삭제하여 다른 태그와 최대한 붙어있게 표시함 */
+            margin: 0px;
+            /* 컨텐츠까지의 내부 공간을 삭제하여 컨텐츠 영역 내에서 공간을 설정할 수 있도록 해줌 */
+            padding: 0px;
+            /* 해당 태그의 자손 태그가 해당 태그의 크기보다 클 경우 화면에 표시하는 방식 */
+            overflow: hidden;
+            background-color: #333333;
+        }
+
+        nav li {
+            /* 해당 태그를 위로 띄워서 정렬하는 속성 */
+            /* display : block인 태그도 inline 속성인 것처럼 한 라인에 정렬이 가능함 */
+            float : left;
+        }
+
+        nav li a {
+            /* a 태그는 display:inline 이나 inline-block을 사용하여 padding, margin을 사용할 수 있음 */
+            display: inline-block;
+            color: #f2f2f2;
+            /* 글자를 중앙 정렬 */
+            text-align: center;
+            /* a 태그의 외부 테두리 영역과 컨텐츠 영역 사이의 공간을 마련해줌 */
+            /* display : inline-block을 사용했기 때문 */
+            /* text-align : center와 함께 사용하여 실제 컨텐츠가 정 중앙에 표시되는 효과 */
+            padding: 15px;
+            /* a 태그의 밑줄을 없앰 */
+            text-decoration: none;
+        }
+
+        /* a:hover을 사용하여 마우스가 해당 태그 위에 올라갔을 경우 마치 해당 태그를 선택한 것처럼 보이게 하는 효과  */
+        nav li a:hover{
+            background-color: #dddddd;
+            color: black;
+        }
+
+        /* li 태그가 float 속성을 사용하였으므로 다른 태그에 영향이 가지 않도록 clear 시켜 줌 */
+        nav::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* nav {
+            overflow: hidden;
+            background-color: #333333;
+        }
+
+        nav a {
+            float : left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 15px;
+            text-decoration:none;
+        }
+
+        nav a:hover {
+            background-color: #dddddd;
+            color: black;
+        } */
+
+        main {
+            background-color: #dddddd;
+            padding: 10px;
+            height: 300px;
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main p {
+            float: left;
+            width: 33.3%;
+            margin-top: 0px;
+            padding: 10px;
+            height: 200px;
+            text-align: center;
+            border: 1px solid darkgray;
+        }
+        main h2 {
+            text-align: center;
+
+        }
+        .main1 {background-color: #aaaaaa;}
+        .main2 {background-color: #bbbbbb;}
+        .main3 {background-color: #cccccc;}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- <a href="#">링크1</a>
+            <a href="#">링크2</a>
+            <a href="#">링크3</a> -->
+
+            <ul>
+                <li><a href="#">홈</a></li>
+                <li><a href="#">link1</a></li>
+                <li><a href="#">link2</a></li>
+                <li><a href="#">link3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="title">Main Contents</h2>
+        <p class="main1">메인 컨텐츠가 들어갈 자리1</p>
+        <p class="main2">메인 컨텐츠가 들어갈 자리2</p>
+        <p class="main3">메인 컨텐츠가 들어갈 자리3</p>
+    </main>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>

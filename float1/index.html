@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html 테스트</title>
+
+    <style>
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header, .header {
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        footer, .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        aside, section, .aside, .section {
+            float: left;
+            width: 33.3%;
+            padding: 10px;
+            height: 300px;
+        }
+
+        .boxa { background-color: #aaaaaa; }
+        .boxb { background-color: #bbbbbb; }
+        .boxc { background-color: #cccccc; }
+
+        main::after, .main::after {
+            content:"";
+            display: table;
+            clear: both;
+        }
+        
+        @media (max-width: 576px) {
+            aside {width: 100%;}
+            section {width: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <!-- 시멘틱 태그 사용 -->
+
+    <!-- 헤더 영역 -->
+    <header>
+        <h2>Header</h2>
+    </header>
+
+    <!-- 메인 영역 -->
+    <main>
+        <!-- 왼쪽 사이드바 -->
+        <aside class="boxa">사이드바</aside>
+        <!-- 메인 컨텐츠 -->
+        <section class="boxb">메인 컨텐츠</section>
+        <!-- 오른쪽 사이드바 -->
+        <aside class="boxc">오른쪽 사이드바</aside>
+    </main>
+    
+    <!-- 푸터 영역 -->
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+    <!-- xhtml -->
+    <!-- 전통적인 사용법 -->
+    <!-- <div class="header"></div>
+    <div class="main"></div>
+    <div class="footer"></div> -->
+
+</body>
+</html>

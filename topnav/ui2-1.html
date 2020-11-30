@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ui2</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Black Han Sans', sans-serif;
+        }
+
+        html, body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            background-color: rgb(65, 201, 201);
+            padding: 20px;
+        }
+
+        header h1 {
+            color: white;
+            margin: 0px;
+        }
+
+        /* display : block 인 태그에 width의 크기를 지정하고 margin 값 중 left, right를 auto로 주면 중앙 정렬됨 */
+        section {
+            width: 960px;
+            margin: 0 auto; /*공식*/
+        }
+
+        article {
+            margin: 10px;
+        }
+
+        /* 이미지를 넣기 위한 공간 */
+        .box-img {
+            float: left;
+            width: 33%;
+        }
+
+        /* 부모 태그의 크기만큼 이미지의 크기를 설정하기 위함 */
+        .box-img img { width: 100%; }
+
+        /* 텍스트를 입력하기 위한 공간 */
+        .box-text {
+            float: left;
+            width: 67%;
+            padding: 10px;
+        }
+        article::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>제목부분</h1>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <div class="box-img">
+                    <img src="./images2/img_5terre.jpg" alt="">
+                </div>
+                <div class="box-text">
+                    <h2>5 Terre</h2>
+                    <p>인생을 장식하는 불어 사막이다. 이 있으며, 스며들어 우리 듣는다. 청춘 살 같으며, 지혜는 그리하였는가? 평화스러운 곳이 그러므로 우리는 있는가? 열락의 창공에 오직 바이며, 더운지라 천지는 있는 것이다. 가치를 돋고, 생생하며, 행복스럽고 같이 이상이 우리 있으랴? 꽃 청춘이 얼마나 붙잡아 우리의 가치를 방황하였으며, 부패뿐이다. 같으며, 얼음과 목숨이 청춘의 운다. 무한한 무엇이 그것을 능히 아름다우냐? 위하여 가치를 얼마나 노래하며 원질이 평화스러운 품에 크고 온갖 말이다. 힘차게 생의 행복스럽고 스며들어 싸인 뭇 대한 있다.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="box-img">
+                    <img src="./images2/img_5terre.jpg" alt="">
+                </div>
+                <div class="box-text">
+                    <h2>5 Terre</h2>
+                    <p>인생을 장식하는 불어 사막이다. 이 있으며, 스며들어 우리 듣는다. 청춘 살 같으며, 지혜는 그리하였는가? 평화스러운 곳이 그러므로 우리는 있는가? 열락의 창공에 오직 바이며, 더운지라 천지는 있는 것이다. 가치를 돋고, 생생하며, 행복스럽고 같이 이상이 우리 있으랴? 꽃 청춘이 얼마나 붙잡아 우리의 가치를 방황하였으며, 부패뿐이다. 같으며, 얼음과 목숨이 청춘의 운다. 무한한 무엇이 그것을 능히 아름다우냐? 위하여 가치를 얼마나 노래하며 원질이 평화스러운 품에 크고 온갖 말이다. 힘차게 생의 행복스럽고 스며들어 싸인 뭇 대한 있다.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="box-img">
+                    <img src="./images2/img_5terre.jpg" alt="">
+                </div>
+                <div class="box-text">
+                    <h2>5 Terre</h2>
+                    <p>인생을 장식하는 불어 사막이다. 이 있으며, 스며들어 우리 듣는다. 청춘 살 같으며, 지혜는 그리하였는가? 평화스러운 곳이 그러므로 우리는 있는가? 열락의 창공에 오직 바이며, 더운지라 천지는 있는 것이다. 가치를 돋고, 생생하며, 행복스럽고 같이 이상이 우리 있으랴? 꽃 청춘이 얼마나 붙잡아 우리의 가치를 방황하였으며, 부패뿐이다. 같으며, 얼음과 목숨이 청춘의 운다. 무한한 무엇이 그것을 능히 아름다우냐? 위하여 가치를 얼마나 노래하며 원질이 평화스러운 품에 크고 온갖 말이다. 힘차게 생의 행복스럽고 스며들어 싸인 뭇 대한 있다.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
